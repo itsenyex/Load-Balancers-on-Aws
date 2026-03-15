@@ -15,6 +15,10 @@ Gateway Load Balancer (GWLB) is a specialized type for running third-party virtu
 A few other key concepts to know:
 Target groups are how you define backends — they can contain EC2 instances, ECS tasks, Lambda functions, or bare IP addresses. Each LB listener rule points to a target group.
 
+The load balancers DNS I created:
+internal-DemoASG-1-1514988465.eu-north-1.elb.amazonaws.com
+DemoALB-796720234.eu-north-1.elb.amazonaws.com
+
 Listeners define which port/protocol the LB accepts traffic on, and what to do with it (forward, redirect, return a fixed response).
 
 Cross-zone load balancing distributes traffic evenly across all targets in all AZs (enabled by default on ALB, optional on NLB/GWLB).
